@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assests/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="assests/css/style.css"> -->
     <title>unit-4-game</title>
 </head>
 <body>
@@ -16,20 +20,29 @@
         <p>Each crystal has a hidden value that you must click to discover. Match your score to the number below to win!</p>
     </div>
     <div class="row">
-        <div id="randomNumber">Number to match:</div>
+        <p>Number to match: 
+            <span id="randomNumber"></span>
+        </p>
     </div>
     <div class="row">
-        <div id="userScore">Your score:</div>
+        <p>Your number: 
+            <span id="userScore"></span>
+        </p>
     </div>
     <div class="row">
-        <div id="wins">Wins:</div>
+        <p>Wins: 
+            <span id="wins"></span>
+        </p>
     </div>
     <div class="row">
-        <div id="losses">Losses:</div>
+        <p>Losses: 
+            <span id="losses"></span>
+        </p>
     </div>
     <div class="row">
-        <img src="assets/images/crystal1.jpg" id="crystal">
-        <img src="assets/images/crystal2.jpg" id="crystal">
+        <span class="crystal"><img src="assets/images/crystal1.jpg" id="crystal1"></span>
+        <span class="crystal"><img src="assets/images/crystal2.jpg" id="crystal2"></span>
+        <!-- add 2 more crystals -->
     </div>
     </div>
 </body>
