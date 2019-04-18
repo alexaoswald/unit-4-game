@@ -10,7 +10,6 @@ $(document).ready(function(){
     var losses = 0;
     function reset(){
         Random=Math.floor(Math.random() * 120) + 19;
-        console.log(Random)
         $("#randomNumber").text(Random);
         num1= Math.floor(Math.random()*11+1);
         num2= Math.floor(Math.random()*11+1);
